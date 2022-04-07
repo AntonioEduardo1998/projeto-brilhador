@@ -1,6 +1,7 @@
 package com.example.fornecedor.controllers;
 
 import com.example.fornecedor.domain.Fornecedor;
+import com.example.fornecedor.domain.Produto;
 import com.example.fornecedor.repositories.FornecedorRepository;
 
 import org.springframework.web.bind.annotation.GetMapping;
@@ -26,4 +27,10 @@ public class FornecedorController {
     Fornecedor incluir(@RequestBody Fornecedor novoFornecedor){
         return fornecedorRepository.save(novoFornecedor);
     }
+
+    @GetMapping("/fornecedor/estoque")
+    String listarEstoque() {
+        return FornecedorRepository.getEstoque();
+    }
+
 }
