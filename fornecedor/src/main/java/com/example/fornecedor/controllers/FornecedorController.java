@@ -4,6 +4,7 @@ import com.example.fornecedor.domain.Fornecedor;
 import com.example.fornecedor.domain.Produto;
 import com.example.fornecedor.repositories.FornecedorRepository;
 
+import org.springframework.boot.jackson.JsonComponent;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;

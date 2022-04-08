@@ -15,4 +15,10 @@ public interface FornecedorRepository extends CrudRepository<Fornecedor, Long> {
         String result = restTemplate.getForObject(url_estoque, String.class);
         return result;
     }
+
+    public static String getProduto(Number id){
+        String url = url_estoque.concat(id.toString());
+        String result = restTemplate.getForObject(url, String.class);
+        return result;
+    }
 }
