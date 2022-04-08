@@ -14,4 +14,29 @@ Payload:
   "tipo": "..."
   "cidade": "..."
 }
+
+
+```
+
+**serviço forncedor**
+
+```
+GET Fornecedores http://localhost:3535/fornecedores
+POST Fornecedor http://localhost:3535/fornecedor
+
+{
+	"nome": "Fornecedor",
+	"cidade": "Curitiba"
+}
+
+GET Estoque Fornecedor http://localhost:3535/fornecedor/estoque
+GET Pedidos Estoque http://localhost:3535/fornecedores/pedidos
+POST Pedido para Fornecedor http://localhost:3535/pedido
+
+{
+	"autor": "Geucimar",
+	"descricao": "materia prima",
+	"id_produto": 2
+}
+
 ```
